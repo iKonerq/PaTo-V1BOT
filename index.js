@@ -87,7 +87,7 @@ const {
   const Pulsa = up.Pulsa;
   const Dana = up.Dana;
   const blocked = [];
-  const ownerNumber = up.ownerNumber;
+  const Number = 56977765482;
   //--
   
   //--Apikey
@@ -99,7 +99,7 @@ const {
   //--
   
   //--Kontak
-  const vcard = 'BEGIN:VCARD\n'
+const vcard = 'BEGIN:VCARD\n'
   + 'VERSION:3.0\n'
   + 'FN:Mr.Pato\n' // Nama
   + 'ORG:Mr.Pato-Bot;\n' // Nama bot
@@ -224,7 +224,7 @@ const {
   fs.writeFileSync('./datauser/limit.json', JSON.stringify(_limit))
 	}
   }
-  */
+		  */
   
   //--Waktu
   function kyun(seconds){
@@ -319,27 +319,27 @@ const {
 			  const isCmd = body.startsWith(prefix)
 		const is = budy.slice(0).trim().split(/ +/).shift().toLowerCase()
 			  mess = {
-	wait: '⏳ Espera ',
-	success: '🎉 Con exito',
-	Public: '🛡 Modo privado activado',
-	ferr: 'Lo siento ocurrio un error',
-	limitend: 'El tiempo se agoto',
+	wait: '⏳ Espera. ',
+	success: '🎉 Con exito.',
+	Public: '🛡 Modo privado activado.',
+	ferr: 'Lo siento, ocurrio un error.',
+	limitend: 'El tiempo se agoto.',
 	error: {
-	stick: 'Intentalo al rato :(',
-	Iv: 'Error en el link'
+	stick: 'Intentalo más tarde. :(',
+	Iv: 'Error en el link.'
 	},
 	only: {
-	  group: 'Este comando solo puede ser usado en grupos',
-	  ownerG: 'Este comando solo puede ser usado por el dueño del grupo',
-	  ownerB: 'Este comando solo puede ser usado por el dueño del bot',
-	  admin: 'Debes de ser admin para este comando',
-	  Badmin: 'El bot debe ser admin para este comando',
-	  daftarB: `Hola, usa *${prefix}verify* para poder usar el bot`
+	  group: 'Este comando solo puede ser usado en grupos.',
+	  G: 'Este comando solo puede ser usado por el dueño del grupo.',
+	  B: 'Este comando solo puede ser usado por el dueño del bot.',
+	  admin: 'Debes de ser admin para este comando.',
+	  Badmin: 'El bot debe ser admin para este comando.',
+	  daftarB: `Hola, usa *${prefix}verify* para poder usar el bot.`
 	}
   }
 		const totalchat = await Lxa.chats.all()
 			  const botNumber = Lxa.user.jid
-			  const ownerNumber = [`${up.ownerNumber}@s.whatsapp.net`] // replace this with your number
+			  const ownerNumber = [`${56977775482}@s.whatsapp.net`] // replace this with your number
 			  const isGroup = from.endsWith('@g.us')
 			  const sender = isGroup ? mek.participant : mek.key.remoteJid
 			  const groupMetadata = isGroup ? await Lxa.groupMetadata(from) : ''
@@ -350,7 +350,7 @@ const {
 			  const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
 			  const isGroupAdmins = groupAdmins.includes(sender) || false
 			  const isWelkom = isGroup ? welkom.includes(from) : false
-			  const isOwner = ownerNumber.includes(sender)
+	  const isOwner = ownerNumber.includes(sender)
 			  const isSimi = isGroup ? samih.includes(from): false
 		const isRegister = checkRegisteredUser(sender)
 		const q = args.join(' ')
@@ -511,7 +511,7 @@ const {
 	try {
   const getmemex = groupMembers.length
   if (getmemex <= memberlimit) {
-	Lxa.sendMessage(from, `Los miembros de este grupo son insuficientes ${memberlimit}, para usar este bot`, text)
+	Lxa.sendMessage(from, `Los miembros de este grupo son insuficientes ${memberlimit}, para usar este bot.`, text)
   
 	setTimeout(() => {
   Lxa.groupLeave(from) // ur cods
@@ -565,7 +565,7 @@ const {
   case 'help':
   case 'menu':
   hasil = `        ────────────────
-  Hola *${pushname}* usa este comando ${prefix}menu
+  Hola *${pushname}*, usa este comando ${prefix}menu.
 		  ────────────────`
   reply(hasil)
 		  break
@@ -578,46 +578,42 @@ const {
 	if (!isRegister) return reply(mess.only.daftarB)
 	uptime = process.uptime()
 	const Menu = {
-  text: `  ────𝕸𝖗.𝕻𝖆𝖙𝖔 -𝕭𝖔𝖙⚜️🦆────
+  text: `  ────Amigãos Bot────
+  Hola, *${pushname}*.
   ────────────────
-  Hola *${pushname}* 
-  ────────────────͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏
-  ────────────────
-  〘 *BOT* 〙
+  〘 *Bot* 〙
   ‣ Prefijo:  *「 ${prefix} 」*
-  ‣ Yo soy: 𝕸𝖗.𝕻𝖆𝖙𝖔 -𝕭𝖔𝖙⚜️🦆
+  ‣ Yo soy amigãos bot.
   ‣ Conección: *Baileys*
   ‣ Tiempo encencido: *${kyun(uptime)}*
   ‣ Modo: *ON*
   ‣ Grupo:  *${groupName}*
   ‣ Número de grupos: *${_registered.length}*
   ‣ Número de chats: *${totalchat.length}*
-  ‣ Grupo oficial
+  ‣ Número del 
   • _${Wa1}_
-  ‣ Suscribete
+  ‣ Canal del 
   _${Ig}_
   ────────────────
   ┏━━━━━━━━━━━━━━━━━━━━
-  ┃─────〘 𝕸𝖗.𝕻𝖆𝖙𝖔 -𝕭𝖔𝖙⚜️🦆 〙────
+  ┃─────〘 *Amigãos Bot* 〙─────
   ┃━━━━━━━━━━━━━━━━━━━━
   ┠⊷️ *${prefix}Simi (Teks)*
   ┃ _Simsimi Chat_
   ┠⊷️ *${prefix}Info*
   ┃ _Información del bot_
-  ┠⊷️ *${prefix}Owner*
+  ┠⊷️ *${prefix}*
   ┃ _Dueño del bot_
-  ┠⊷️ *${prefix}Donasi*
-  ┃ _Información de donasión_
   ┠⊷️ *${prefix}Ping*
   ┃ _Velocidad_
   ┗━━━━━━━━━━━━━━━━━━━━
   ┏━━━━━━━━━━━━━━━━━━━━
   ┃─────〘  *List menu* 〙─────
   ┗━━━━━━━━━━━━━━━━━━━━
-  *〘 GRUP 〙*
+  *〘 Grupo 〙*
   ┏━━━━━━━━━━━━━━━━━━━━
   ┠⊷️ *${prefix}Listadmin*
-  ┃ _Lista de los admin_
+  ┃ _Lista de los admins_
   ┠⊷️ *${prefix}Listonline*
   ┃ _Lista de los miembros en linea_
   ┠⊷️ *${prefix}Closegc*
@@ -649,7 +645,7 @@ const {
   ┠⊷️ *${prefix}Delete*
   ┃ _Eliminar mensaje del bot_
   ┗━━━━━━━━━━━━━━━━━━━━
-  *〘 FUN 〙*
+  *〘 Diversión 〙*
   ┏━━━━━━━━━━━━━━━━━━━━
   ┠⊷️ *${prefix}Alay (Texto)*
   ┃ _Font Alay_
@@ -680,7 +676,7 @@ const {
   ┠⊷️ *${prefix}Fitnah (Menciona a la persona|texto1|texto2)*
   ┃ _Mensaje falso de una persona_
   ┗━━━━━━━━━━━━━━━━━━━━
-  *〘 MEDIA 〙*
+  *〘 Media 〙*
   ┏━━━━━━━━━━━━━━━━━━━━
   ┠⊷️ *${prefix}listvn*
   ┃ _Lista de sonidos_
@@ -691,16 +687,16 @@ const {
   ┠⊷️ *${prefix}listvid*
   ┃ _Lista de videos_
   ┗━━━━━━━━━━━━━━━━━━━━
-  *〘 EDITING 〙*
+  *〘 Edición 〙*
   ┏━━━━━━━━━━━━━━━━━━━━
   ┠⊷️ *${prefix}Gtav (Foto)*
-  ┃ _Convierte foto al estilo Gtav_
+  ┃ _Convierte una foto al estilo de GTA V_
   ┠⊷️ *${prefix}Wanted (Foto)*
   ┃ _Convierte foto al estilo wanted_
   ┠⊷️ *${prefix}Drawing (Foto)*
   ┃ _Convierte foto a dibujo_
   ┗━━━━━━━━━━━━━━━━━━━━
-  *〘 ANIME 〙*
+  *〘 Anime 〙*
   ┏━━━━━━━━━━━━━━━━━━━━
   ┠⊷️ *${prefix}Kusonime (Nombre)*
   ┃ _Información de animes_
@@ -717,7 +713,7 @@ const {
   ┠⊷️ *${prefix}Neko*
   ┃ _Imagen aleatoria de neko_
   ┗━━━━━━━━━━━━━━━━━━━━
-  *〘 GAME 〙*
+  *〘 Juegos 〙*
   ┏━━━━━━━━━━━━━━━━━━━━
   ┠⊷️ *${prefix}Tebakgambar*
   ┃ _Adivinanza de imagen_
@@ -733,7 +729,7 @@ const {
   ┠⊷ *${prefix}Truth*
   ┠⊷ *${prefix}Dare*
   ┗━━━━━━━━━━━━━━━━━━━━
-  *〘 KERANG AJAIB 〙*
+  *〘 KERANG AJAIB (???) 〙*
   ┏━━━━━━━━━━━━━━━━━━━━
   ┠⊷ *${prefix}Apakah (Texto)*
   ┠⊷ *${prefix}Bisakah (Texto)*
@@ -742,7 +738,7 @@ const {
   ┠⊷ *${prefix}Gantengcek (Texto)*
   ┠⊷ *${prefix}Cantikcek (Texto)*
   ┗━━━━━━━━━━━━━━━━━━━━
-  *〘 TOOLS 〙*
+  *〘 Herramientas 〙*
   ┏━━━━━━━━━━━━━━━━━━━━
   ┠⊷️ *${prefix}Tomp3*
   ┃ _Audio de video_
@@ -761,23 +757,20 @@ const {
   ┃ _Texto en imagen_
   ┠⊷️ *${prefix}Wait*
   ┗━━━━━━━━━━━━━━━━━━━━
-  *〘 TEXT0 〙*
+  *〘 Texto 〙*
   ┏━━━━━━━━━━━━━━━━━━━━
   ┠⊷️ *${prefix}Tahta (Texto)*
-  ┃ _Ex : ${prefix}Tahta Mr.pato_
   ┗━━━━━━━━━━━━━━━━━━━━
-  *〘 TEXTO2 〙*
+  *〘 Texto 2 〙*
   ┏━━━━━━━━━━━━━━━━━━━━
   ┠⊷️ *${prefix}Ephoto list*
   ┃ _Lista de ephoto_
   ┠⊷️ *${prefix}Ephoto (code + Texto)*
-  ┃ _Ex : ${prefix}Ephoto 25 Mr.pato_
   ┠⊷️ *${prefix}Textpro list*
   ┃ _Lista de textpro
   ┠⊷️ *${prefix}Textpro (code + Texto)*
-  ┃ _Ex : ${prefix}Textpro 55 Mr.pato_
   ┗━━━━━━━━━━━━━━━━━━━━
-  *〘 IMAGENES 〙*
+  *〘 Imagenes 〙*
   ┏━━━━━━━━━━━━━━━━━━━━
   ┠⊷️ *${prefix}Cogan*
   ┃ _Foto aleatoria de un hombre_
@@ -798,7 +791,7 @@ const {
   ┠⊷️ *${prefix}Google (Texto)*
   ┃ _Buscar cosas en google_
   ┗━━━━━━━━━━━━━━━━━━━━
-  *〘 EDUCACIÓN 〙*
+  *〘 Educación 〙*
   ┏━━━━━━━━━━━━━━━━━━━━
   ┠⊷️ *${prefix}Brainly (Pregunta)*
   ┃ _Buscar cosas_
@@ -815,7 +808,7 @@ const {
   ┠⊷️ *${prefix}Kodenegara*
   ┃ _Codigo de país_
   ┗━━━━━━━━━━━━━━━━━━━━
-  *〘 OTRO 〙*
+  *〘 Otro 〙*
   ┏━━━━━━━━━━━━━━━━━━━━
   ┠⊷️ *${prefix}Lirik (Nombre)*
   ┃ _Letra de canciones_
@@ -832,7 +825,7 @@ const {
   ┠⊷️ *${prefix}Gplaystore*
   ┃ _Busqueda en playstore_
   ┗━━━━━━━━━━━━━━━━━━━━
-  *〘 HORÓSCOPO 〙*
+  *〘 Horóscopo 〙*
   ┏━━━━━━━━━━━━━━━━━━━━
   ┠⊷️ *${prefix}Arti (Nombre)*
   ┃ _Significado de tu nombre_
@@ -847,17 +840,17 @@ const {
   ┠⊷️ *${prefix}Artimimpi (Texto)*
   ┃ _Significado de tus sueños_
   ┗━━━━━━━━━━━━━━━━━━━━
-  *〘 TIEMPO 〙*
+  *〘 Tiempo 〙*
   ┏━━━━━━━━━━━━━━━━━━━━
   ┠⊷️ *${prefix}Cuaca (Área)*
   ┃ _Información meteorológica_
   ┠⊷️ *${prefix}Infogempa*
   ┃ _Información de terremotos recientes_
   ┗━━━━━━━━━━━━━━━━━━━━
-  *〘 DESCARGAS 〙*
+  *〘 Descargas 〙*
   ┏━━━━━━━━━━━━━━━━━━━━
   ┠⊷️ *${prefix}Ytmp3 (Link)*
-  ┃ _Descargar audios de YT, es mejor con play_
+  ┃ _Descargar audios de YT, es mejor con .play_
   ┠⊷️ *${prefix}Ytmp4 (Link)*
   ┃ _Descargar video de YT_
   ┠⊷️ *${prefix}Fb (Link)*
@@ -867,13 +860,13 @@ const {
   ┠⊷️ *${prefix}Scdl (Link)*
   ┃ _Descargador de Soundcloud_
   ┠⊷️ *${prefix}Tik (Link)*
-  ┃ _Descargar Tiktok_
+  ┃ _Descargar un video de TikTok_
   ┠⊷️ *${prefix}Pin (Link)*
   ┃ _Descargar Pinterest_
   ┠⊷️ *${prefix}Joox (Canción)
   ┃ _Descargar canciones_
   ┗━━━━━━━━━━━━━━━━━━━━
-  *〘 OWNER 〙*
+  *〘  〙*
   ┏━━━━━━━━━━━━━━━━━━━━
   ┠⊷️ *${prefix}Clone*
   ┃ _Clonacion de perfil_
@@ -975,7 +968,7 @@ const {
 	uptime = process.uptime()
 	teks = `*‣ Nombre del bot* : ${me.name}
 	‣ *Número del bot* : @${me.jid.split('@')[0]}
-	‣ *Dueño* : Mr.Pato
+	‣ *Dueño* : iKoner
 	‣ *Prefijo* : ${prefix}
 	‣ *Usuarios bloqueados* : ${blocked.length}
 	‣ *Tiempo activo* : ${kyun(uptime)}
@@ -1146,7 +1139,7 @@ const {
   nimek = n[Math.floor(Math.random() * n.length)];
   pok = await getBuffer(nimek)
   Lxa.sendMessage(from, pok, image, {
-	quoted: mek, caption: `Mr.Pato-Bot`
+	quoted: mek, caption: `iKonerBot`
   })
   
   } catch {
@@ -1170,7 +1163,7 @@ const {
   nimek = n[Math.floor(Math.random() * n.length)];
   pok = await getBuffer(nimek)
   Lxa.sendMessage(from, pok, image, {
-	quoted: mek, caption: `Mr.Pato-Bot`
+	quoted: mek, caption: `iKonerBot`
   })
   
   } catch {
@@ -1224,7 +1217,7 @@ const {
   nimek = n[Math.floor(Math.random() * n.length)];
   pok = await getBuffer(nimek)
   Lxa.sendMessage(from, pok, image, {
-	quoted: mek, caption: `Mr.Pato-Bot`
+	quoted: mek, caption: `iKonerBot`
   })
   
   break
@@ -1249,7 +1242,7 @@ const {
 	nimek = n[Math.floor(Math.random() * n.length)];
 	pok = await getBuffer(nimek)
 	Lxa.sendMessage(from, pok, image, {
-  quoted: mek, caption: `Mr.Pato-Bot`
+  quoted: mek, caption: `iKonerBot`
 	})
 	
 	} catch {
@@ -1279,7 +1272,7 @@ const {
 	nimek = n[Math.floor(Math.random() * n.length)];
 	pok = await getBuffer(nimek)
 	Lxa.sendMessage(from, pok, image, {
-  quoted: mek, caption: `Mr.Pato-Bot`
+  quoted: mek, caption: `iKonerBot`
 	})
 	
 	} catch {
@@ -1305,7 +1298,7 @@ const {
 	nimek = n[Math.floor(Math.random() * n.length)];
 	pok = await getBuffer(nimek)
 	Lxa.sendMessage(from, pok, image, {
-  quoted: mek, caption: `Mr.Pato-Bot`
+  quoted: mek, caption: `iKonerBot`
 	})
 	
 	} catch {
@@ -1331,7 +1324,7 @@ const {
 	nimek = n[Math.floor(Math.random() * n.length)];
 	pok = await getBuffer(nimek)
 	Lxa.sendMessage(from, pok, image, {
-  quoted: mek, caption: `Mr.pato-Bot`
+  quoted: mek, caption: `iKonerBot`
 	})
 	
 	} catch {
@@ -2283,7 +2276,7 @@ const {
   break
   
   //---kontak pemilik bot
-  case 'owner':
+case 'owner':
 	case 'creator':
   Lxa.sendMessage(from, {
 	displayname: "Jeff", vcard: vcard
@@ -2960,7 +2953,7 @@ const {
   
 			  case 'addstik':
 				  if (!isQuotedSticker) return reply('Respon un sticker')
-				  if (!isOwner) return reply(mess.only.ownerB)
+				  if (!is) return reply(mess.only.B)
 				  svst = body.slice(9)
 				  if (!svst) return reply('Nombre del sticker?')
 				  boij = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
@@ -2973,7 +2966,7 @@ const {
   
 			  case 'addvn':
 				  if (!isQuotedAudio) return reply('Responde un audio')
-				  if (!isOwner) return reply(mess.only.ownerB)
+				  if (!is) return reply(mess.only.B)
 				  svst = body.slice(7)
 				  if (!svst) return reply('Nombre del audio?')
 				  boij = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
@@ -3006,7 +2999,7 @@ const {
   
 			  case 'addimg':
 				  if (!isQuotedImage) return reply('Responde una imagen')
-				  if (!isOwner) return reply(mess.only.ownerB)
+				  if (!is) return reply(mess.only.B)
 				  svst = body.slice(8)
 				  if (!svst) return reply('Nombre de la imagen')
 				  boij = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
@@ -3037,7 +3030,7 @@ const {
 				  break
   
 			  case 'addvid':
-				if (!isOwner) return reply(mess.only.ownerB)
+				if (!is) return reply(mess.only.B)
 				  if (!isQuotedVideo) return reply('Responde un video')
 				  svst = body.slice(8)
 				  if (!svst) return reply('Nombre del video')
@@ -3117,7 +3110,7 @@ const {
 	if (err) return reply('Error al convertir el sticker en vídeo')
 	buffer = fs.readFileSync(ran)
 	Lxa.sendMessage(from, buffer, video, {
-  quoted: mek, caption: 'Mr.Pato'
+  quoted: mek, caption: 'iKoner'
 	})
 	fs.unlinkSync(ran)
   })
@@ -3205,7 +3198,7 @@ const {
   //-- Setting prefix
 				  case 'setprefix':
 					  if (args.length < 1) return
-					  if (!isOwner) return reply(mess.only.ownerB)
+					  if (!is) return reply(mess.only.B)
 					prefix = args[0]
 					  up.prefix = prefix
 					  fs.writeFileSync('./data/settings.json', JSON.stringify(up, null, '\t'))
@@ -3216,7 +3209,7 @@ const {
   case 'block':
 	Lxa.updatePresence(from, Presence.composing)
 	if (!isGroup) return reply(mess.only.group)
-	if (!isOwner) return reply(mess.only.ownerB)
+	if (!is) return reply(mess.only.B)
 	Lxa.blockUser (`${body.slice(8)}@c.us`, "add")
 	Lxa.sendMessage(from, `Usuario bloqueado`, text, {
   quoted: mek
@@ -3226,7 +3219,7 @@ const {
   //membuka blokir
   case 'unblock':
 	if (!isGroup) return reply(mess.only.group)
-	if (!isOwner) return reply(mess.only.ownerB)
+	if (!is) return reply(mess.only.B)
 	Lxa.blockUser (`${body.slice(9)}@c.us`, "remove")
 	Lxa.sendMessage(from, `Usuario desbloqueado`, text)
 	break
@@ -3320,7 +3313,7 @@ const {
   
   //clear all chat
 				  case 'clearall':
-					  if (!isOwner) return reply('Estas seguro?')
+					  if (!is) return reply('Estas seguro?')
 					  anu = await Lxa.chats.all()
 					  Lxa.setMaxListeners(25)
 					  for (let _ of anu) {
@@ -3329,7 +3322,7 @@ const {
 					  reply('Se borraron todos los mensajes :)')
 					  break
 				  case 'bc':
-					  if (!isOwner) return reply('Okay')
+					  if (!is) return reply('Okay')
 					  if (args.length < 1) return reply('.......')
 					  anu = await Lxa.chats.all()
 					  if (isMedia && !mek.message.videoMessage || isQuotedImage) {
@@ -3463,7 +3456,7 @@ const {
   //--ganti pp bot
   case 'setppbot':
 	Lxa.updatePresence(from, Presence.composing)
-	if (!isOwner) return reply(mess.only.ownerB)
+	if (!is) return reply(mess.only.B)
 	const botpp = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contxtInfo: mek
 	const cuk = await Lxa.downloadAndSaveMediaMessage(botpp)
 	await Lxa.updateProfilePicture(botNumber, cuk)
@@ -3473,7 +3466,7 @@ const {
   //event
   /*case 'event':
 	if (!isGroup) return reply(mess.only.group)
-	if (!isOwner) return reply(mess.only.ownerB)
+	if (!is) return reply(mess.only.B)
 	if (args.length < 1) return reply('ketik 1 untuk mengaktifkan')
 	if (Number(args[0]) === 1) {
   if (isEventon) return reply('*SUDAH AKTIF* !!!')
@@ -3502,7 +3495,7 @@ const {
   //--Mengeluarkan bot
 		case 'leave':
 		if (!isGroup) return reply(mess.only.group)
-		if (isGroupAdmins || isOwner) {
+		if (isGroupAdmins || is) {
 		Lxa.groupLeave(from)
 					  } else {
 		reply(mess.only.admin)
@@ -3521,7 +3514,7 @@ const {
 						  fs.unlinkSync(medimg)
 						  if (err) return reply('No se pudo hacer :(')
 						  buffer = fs.readFileSync(ran)
-						  Lxa.sendMessage(from, buffer, image, {quoted: mek, caption: 'Mr.Pato-Bot'})
+						  Lxa.sendMessage(from, buffer, image, {quoted: mek, caption: 'iKonerBot'})
 						  fs.unlinkSync(ran)
 					  })
 					  break
@@ -3730,7 +3723,7 @@ const {
 										break
 				  case 'clone':
 					  if (!isGroup) return reply(mess.only.group)
-					  if (!isOwner) return reply(mess.only.ownerB)
+					  if (!is) return reply(mess.only.B)
 					  if (args.length < 1) return reply('Tag target')
 					  if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag cvk')
 					  mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
@@ -3762,7 +3755,7 @@ const {
   
 				  default:
 				  if (body.startsWith(`${prefix}${command}`)) {
-	reply(`        ────────────────\nHols *${pushname}* !!!\nEse comando no esta en mi lista : *${prefix}${command}*\nUsa esto para verlos*${prefix}Menu*\n        ────────────────`)
+	reply(`        ────────────────\nHola,  *${pushname}* !!!\nEse comando no esta en mi lista : *${prefix}${command}*\nUsa esto para verlos*${prefix}Menu*\n        ────────────────`)
 				  }
 					  if (isGroup && isSimi && budy != undefined) {
 						  console.log(budy)
